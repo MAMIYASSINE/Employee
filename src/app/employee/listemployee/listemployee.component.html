@@ -1,0 +1,25 @@
+<div style= " padding-top : 70 px ; ">
+    <div class= "container" >
+    <table class= "table table-bordered table-striped table-hover" >
+    <thead >
+    <tr >
+    <th class="text-center" >ID</th >
+    <th class="text-center" >Name</th >
+    <th class="text-center">Status</th>
+    <th class="text-center" colspan="2"></th>
+    </tr >
+    </thead >
+    <tbody >
+    <tr *ngFor= "let emp of employees">
+    <td>{{emp.id}}</td>
+    <td>{{emp. name}}</td>
+    <td>{{emp.status}}</td>
+    <!--<td >
+    <a class= "btn btn-info" routerLink="/edit/{{ Employee.id }}"><i class= "fa fa-eye" ></i > Edit </a >
+    </td>
+    <td><a class= "btn btn-info" routerLink="/delete/{{ Employee.id }}"><i class= "fa fa-eye"></i>Delete</a></td>-->
+    </tbody >
+    </table >
+    <ul><a href=""><li>ADD</li></a></ul>
+    </div >
+    </div >
